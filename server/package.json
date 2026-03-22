@@ -1,0 +1,20 @@
+{
+  "name": "llm-internals-explorer-server",
+  "version": "1.0.0",
+  "description": "Backend proxy server for LLM Internals Explorer",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "axios": "^1.6.0",
+    "eventsource-parser": "^1.1.2"
+  }
+}

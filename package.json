@@ -1,0 +1,21 @@
+{
+  "name": "llm-internals-explorer",
+  "version": "1.0.0",
+  "description": "A visual, interactive explainer of what happens when you send a prompt to a local Ollama model",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev:all": "concurrently \"npm run server\" \"npm run client\" \"npm run pytorch\"",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "pytorch": "cd pytorch_server && python main.py",
+    "build": "npm --prefix client run build",
+    "preview": "npm --prefix client run preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

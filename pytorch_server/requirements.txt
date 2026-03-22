@@ -1,0 +1,5 @@
+torch
+transformers
+fastapi
+uvicorn[standard]
+numpy
